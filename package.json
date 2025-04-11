@@ -1,0 +1,13 @@
+{
+  "name": "vanilla-panels",
+  "version": "0.1.0",
+  "description": "Add simple panels to your website",
+  "scripts": {
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "4.*",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.86.0"
+  }
+}

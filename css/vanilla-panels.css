@@ -1,0 +1,70 @@
+/* ----------------------------------------------------------
+  Panels
+---------------------------------------------------------- */
+.panel-wrapper,
+.panel-wrapper .panel-overlay,
+.panel-wrapper .panel-content__inner {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.panel-wrapper {
+  z-index: 12;
+  position: fixed;
+  transition: opacity 0.3s ease;
+}
+.panel-wrapper[data-panel-open=false] {
+  opacity: 0;
+  pointer-events: none;
+}
+.panel-wrapper .panel-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.panel-wrapper .panel-content {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 450px;
+  max-width: 100%;
+  background-color: #FFF;
+  transition: transform 0.3s ease;
+}
+.panel-wrapper[data-panel-open=false] .panel-content {
+  transform: translateX(100%);
+}
+.panel-wrapper .panel-content__close {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  cursor: pointer;
+}
+.panel-wrapper .panel-content__inner {
+  box-sizing: border-box;
+  padding: 1em;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.panel-wrapper .panel-content__inner:not(:last-child) {
+  bottom: 130px;
+}
+.panel-wrapper .panel-content__action {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  height: 130px;
+  padding: 1em;
+  text-align: center;
+  background-color: #CCC;
+}
