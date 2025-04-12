@@ -68,3 +68,15 @@
   text-align: center;
   background-color: #CCC;
 }
+
+/* Reset
+-------------------------- */
+[data-build-panel] {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: -999vw;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}

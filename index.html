@@ -4,25 +4,38 @@
 <meta charset="UTF-8" />
 <title>Vanilla Panels</title>
 <meta name="viewport" content="width=device-width" />
-<link rel="stylesheet" type="text/css" href="css/base.css" />
-<link rel="stylesheet" type="text/css" href="css/vanilla-panels.css" />
-<script src="js/vanilla-panels.js"></script>
+<link rel="stylesheet" type="text/css" href="css/base.css?v=0.2.0" />
+<link rel="stylesheet" type="text/css" href="css/vanilla-panels.css?v=0.2.0" />
+<script src="js/vanilla-panels.js?v=0.2.0"></script>
 </head>
 <body>
 <h1>Vanilla Panels</h1>
-<button data-panel-trigger="panel-name" type="button">Open Panel</button>
-<div class="panel-wrapper" data-panel="panel-name" aria-hidden="true" data-panel-open="false">
+
+<h2>Full HTML panel</h2>
+<button data-panel-trigger="html-panel" type="button">Open HTML Panel</button>
+<div class="panel-wrapper" data-panel="html-panel" aria-hidden="true" data-panel-open="false">
     <div class="panel-overlay"></div>
     <div class="panel-content">
         <a class="panel-content__close" href="#"><span>Close Panel</span></a>
         <div class="panel-content__inner">
-            <h2>Panel</h2>
-            Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.
+            <h2>HTML Panel</h2>
+            <p>Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</p>
         </div>
         <div class="panel-content__action">
             action
         </div>
     </div>
 </div>
+
+<h2>Built Panel</h2>
+<button data-panel-trigger="built-panel" type="button">Open Built Panel</button>
+<div data-build-panel="built-panel">
+    <div class="panel-content__inner">
+        <h2>Built Panel</h2>
+        <p>Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</p>
+    </div>
+    <div class="panel-content__action">action</div>
+</div>
+
 </body>
 </html>
